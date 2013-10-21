@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#content, #wrap{
+	margin: 0;
+	padding: 0;
+	width: 1024px;
+	height: 768px;
+}
+
+#page1{	
+	width: 100%;
+	height: 100%;	
+	margin: 0;
+	padding: 0;	
+	display: block;
+	background-image: url(../imagenes/principal.jpg);
+}
+
+#page2{
+	margin: 0;
+	padding: 0;	
+	display: none;
+	background-color: purple;
+}
+
+#boton{
+	width: 120px;
+	height: 42px;
+	border: none;
+	color: white;
+	background-image: url(../imagenes/boton.png);
+	background-color: transparent;
+}
+
+#ganaste{
+	background-image: url(../imagenes/bien.png);
+}
+#perdiste{
+	background-image: url(../imagenes/mal.png);
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+#OPCION1{
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-image: url(../imagenes/opcion1.jpg);
+}
+#OPCION2{
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-image: url(../imagenes/opcion2.jpg);
+}
+#OPCION3{
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-image: url(../imagenes/opcion3.jpg);
+}
+#OPCION4{
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-image: url(../imagenes/opcion4.jpg);
+}
+#OPCION5{
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-image: url(../imagenes/opcion5.jpg);
+}
+#OPCION6{
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-image: url(../imagenes/opcion6.jpg);
+}
+#OPCION7{
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-image: url(../imagenes/opcion7.jpg);
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - -*/
+#opciones{
+	width: 500px;
+	margin-top: 69px;
+}
+#opciones li{
+	float: left;
+	list-style:none
+}
+#cintaNegra{
+	width: 100px;
+	height: 100px;
+	background-image: url(../imagenes/cinta_negra.png);
+	background-repeat: no-repeat;
+}
+#cintaVerde{
+	width: 100px;
+	height: 100px;
+	background-image: url(../imagenes/cinta_verde.png);
+	background-repeat: no-repeat;
+}
+#cintaNaranja{
+	width: 100px;
+	height: 100px;
+	background-image: url(../imagenes/cinta_naranja.png);
+	background-repeat: no-repeat;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+#espacio{
+	height: 567px;
+}
+#sinA{	
+	width:100%; 
+	height: 567px; 
+	background-image: url(../imagenes/_v1.png); 
+	background-position-y: 35px;
+}
+#conA{	
+	width:100%; 
+	height: 567px;
+	background-image: url(../imagenes/_v2.png); 
+	background-position-y: 35px;
+}
+
+#sinB{	
+	width:100%; 
+	height: 567px; 
+	background-image: url(../imagenes/_x1.png); 
+	background-position-y: 35px;
+}
+#conB{	
+	width:100%; 
+	height: 567px;
+	background-image: url(../imagenes/_x2.png); 
+	background-position-y: 35px;
+}
+
+#sinC{	
+	width:100%; 
+	height: 567px; 
+	background-image: url(../imagenes/_y1.png); 
+	background-position-y: 35px;
+}
+#conC{	
+	width:100%; 
+	height: 567px;
+	background-image: url(../imagenes/_y2.png); 
+	background-position-y: 35px;
+}
+
+#sinD{	
+	width:100%; 
+	height: 567px; 
+	background-image: url(../imagenes/_z1.png); 
+	background-position-y: 43px;
+}
+#conD{	
+	width:100%; 
+	height: 567px;
+	background-image: url(../imagenes/_z2.png); 
+	background-position-y: 43px;
+}
+
+#sinE{	
+	width:100%; 
+	height: 567px; 
+	background-image: url(../imagenes/_t1.png); 
+	background-position-y: 35px;
+}
+#conE{	
+	width:100%; 
+	height: 567px;
+	background-image: url(../imagenes/_t2.png); 
+	background-position-y: 35px;
+}
+
+#sinF{	
+	width:100%; 
+	height: 567px; 
+	background-image: url(../imagenes/_u1.png); 
+	background-position-y: 35px;
+}
+#conF{	
+	width:100%; 
+	height: 567px;
+	background-image: url(../imagenes/_u2.png); 
+	background-position-y: 35px;
+}
+
+#sinG{	
+	width:100%; 
+	height: 567px; 
+	background-image: url(../imagenes/_a1.png); 
+	background-position-y: 40px;
+}
+#conG{	
+	width:100%; 
+	height: 567px;
+	background-image: url(../imagenes/_a2.png); 
+	background-position-y: 40px;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+#ganaste{
+	display: none;
+	background-color: blue;
+}
+#perdiste{
+	display: none;
+	background-color: green;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+.avanza{
+	background-color: red;
+}
