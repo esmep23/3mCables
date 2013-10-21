@@ -13,8 +13,8 @@
 	        Maruri Digital - Ecuador
 	    </author>
 
-	    <!--splash screen ANDROID-->
-	    <gap:splash src="img/splash/splash_320x480.png" /><!--
+	    <!--splash screen ANDROID
+	    <gap:splash src="img/splash/splash_320x480.png" />--><!--
 	    <gap:splash src="img/splash/splash_320x480.png" gap:platform="android" width="320" height="480" />
 	    <!--splash screen IOS
 	    <gap:splash src="img/splash/splash_320x480.png" gap:platform="ios" width="320" height="480" />
