@@ -56,9 +56,3 @@ function con(){
 }
 
 
-function prueba(){
-	alert(1);
-	document.getElementById('OPCION1').addEventListener('touchmove',  function(e){
-  alert(e.touches[0].pageX);
-},  false);	
-}
