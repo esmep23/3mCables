@@ -31,8 +31,10 @@
 	    <icon src="img/ico/hdpi.png" gap:platform="ios" width="114" height="114" />
 	    <icon src="img/ico/xhdpi.png" gap:platform="ios" width="144" height="144" /> -->
 
+	    <preference name="UIWebViewBounce" value="false" />
+
 		<preference name="phonegap-version" value="2.9.0" />
-	    <preference name="orienation" value="landscape" />
+	    <preference name="orienation" value="landscapeRight" />
 	    <preference name="fullscreen" value="true" />
 
 	    <preference name="android-minSdkVersion" value="10" />
