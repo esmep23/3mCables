@@ -5,9 +5,9 @@
         versionCode="10" 
         version   = "1.0.0">
 
-        <name>3M</name>
+        <name>TresM</name>
 
-	    <description> Cables 3M </description>
+	    <description> Cables TresM </description>
 
 	    <author href="https://build.phonegap.com" email="epulgar@maruri.ec">
 	        Maruri Digital - Ecuador
@@ -45,7 +45,7 @@
 	    <preference name="ios-statusbarstyle" value="black-opaque" />
 	    <preference name="detect-data-types" value="true" />
 	    <preference name="exit-on-suspend" value="true" />
-	    <gap:url-scheme name="com.maruridigital.3M" role="None">
+	    <gap:url-scheme name="com.maruridigital.TresM" role="None">
 	      <scheme>pgbr</scheme>
 	      <scheme>pgbw</scheme>
 	    </gap:url-scheme>
