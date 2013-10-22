@@ -4,6 +4,7 @@ Estefania Pulgar
 */
 function avanzoJuego(e){
 	nivel = 1;
+	
 	document.getElementById("page2").style.display="block";
 	document.getElementById("page1").style.display="none";
 }
@@ -18,12 +19,20 @@ function avanzoNivel(){
 	if(nivel == 6){ nivelesNone(); document.getElementById("OPCION6").style.display="block"; }
 	if(nivel == 7){ nivelesNone(); document.getElementById("OPCION7").style.display="block"; }
 	if(nivel > 7){ window.location.reload(); }
+	alert(nivel);
+	
 }
 
 function puntuacion(){
 	puntuacionInicial = 0;
 	PuntajeTotal = 700;
 	/*-------------------*/
+}
+
+function cintas(){
+    $( "#cintaNegra" ).click(function() { opciones();  });
+    $( "#cintaVerde" ).click(function() { opciones();  });
+    $( "#cintaNaranja" ).click(function() { opciones();  });
 }
 
 function ganaste(){
@@ -55,4 +64,18 @@ function con(){
 	document.getElementById("conG").style.display="none";
 }
 
+/*
+---------------------------------------------------------------------------------------------------
+SELECCION
+---------------------------------------------------------------------------------------------------
+*/
+function opciones(){
+	alert(nivel);
 
+}
+
+/*
+---------------------------------------------------------------------------------------------------
+ANIMACION
+---------------------------------------------------------------------------------------------------
+*/

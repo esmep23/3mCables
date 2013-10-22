@@ -4,6 +4,7 @@
     <title>3M</title> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <link rel="stylesheet" href="css/style.css" media="screen" />
     <script type="text/javascript" src="cordova.js"></script>
@@ -15,11 +16,6 @@
         console.log("empieza!");
         con();
       });
-/*
-      document.body.addEventListener('touchmove', function(event) {
-        event.preventDefault();
-      }, false); 
-*/
     </script> 
 </head>
 <body>
@@ -142,11 +138,11 @@
       </div>
 
       <!-- - - - - - - - - - -->
-      <div id="ganaste">ganaste</div>
+      <div id="ganaste"><img src="imagenes/bien.png" /></div>
       <!-- - - - - - - - - - -->
       
       <!-- - - - - - - - - - -->
-      <div id="perdiste">perdiste</div>
+      <div id="perdiste"><img src="imagenes/mal.png" /></div>
       <!-- - - - - - - - - - -->
   
     </div>
