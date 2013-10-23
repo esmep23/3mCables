@@ -83,7 +83,7 @@ function opciones(){
 		if (toco == 'negra'){ 
 			document.getElementById("grupTouch").style.display="block";
 			//$("#grupTouch").click(function() { GANASTE();  });
-			$("#grupTouch").on('touchstart', function(event){ alert(1);});
+			$("#grupTouch").on('touchmove', function(event){ alert(1);});
 			//GANASTE();
 		}
 		if (toco == 'verde'){ 
