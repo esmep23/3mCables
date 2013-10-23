@@ -42,7 +42,7 @@ window.addEventListener('load', function(){
  var startx = 0
  var dist = 0
  
- alert(1);
+
  box1.addEventListener('touchstart', function(e){ 
   var touchobj = e.changedTouches[0] // reference first touch point (ie: first finger)
   startx = parseInt(touchobj.clientX) // get x position of touch point relative to left edge of browser
@@ -50,26 +50,24 @@ window.addEventListener('load', function(){
   e.preventDefault()
   
  }, false)
- alert();
- box1.addEventListener('touchmove', function(e){ alert('b');
+ box1.addEventListener('touchmove', function(e){ 
   var touchobj = e.changedTouches[0] // reference first touch point for this event
   var dist = parseInt(touchobj.clientX) - startx
   statusdiv.innerHTML = 'Status: touchmove<br /> Horizontal distance traveled: ' + dist + 'px'
   e.preventDefault()
-  alert(3);
+
  }, false)
-alert();
- box1.addEventListener('touchend', function(e){ alert('c');
+
+ box1.addEventListener('touchend', function(e){ 
   var touchobj = e.changedTouches[0] // reference first touch point for this event
   statusdiv.innerHTML = 'Status: touchend<br /> Resting x coordinate: ' + touchobj.clientX + 'px'
   e.preventDefault()
-  if (dist == 490 || dist == 350 || dist == 520){ alert(1);
+  if (dist == 490 || dist == 350 || dist == 520){ 
   alert(llegue);
  }
  }, false)
  
 }, false)
- alert(4);
 
 </script>
  <!--
