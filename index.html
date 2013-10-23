@@ -17,12 +17,18 @@
         con();
         botonesError();
         cintas();
+
+        document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
+        document.getElementById('movieShow').addEventListener('touchmove',  function(e){
+          console.log(e.touches[0].pageX);
+        },  false);
       });
     </script> 
 </head>
 <body>
   <div id="content">
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <a href="index2.html"><h1>otro</h1></a>
     <div id="page1">
       <div id="espacio"></div>
       <div id="intOpciones">
