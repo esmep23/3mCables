@@ -89,10 +89,8 @@ window.addEventListener('load', function(){
         e.preventDefault();
     });*/
      $('html').bind('touchmove', function(e){ 
-      var touchobj = e.changedTouches[0] // reference first touch point (ie: first finger)
-      startx = parseInt(touchobj.clientX) // get x position of touch point relative to left edge of browser
-      statusdiv.innerHTML = 'Status: touchstart<br /> ClientX: ' + startx + 'px'
-      e.preventDefault()
+        $('#status').html(e.pageX +', '+ e.pageY);
+        e.preventDefault();
     });
 </script>
 </body></html>
