@@ -81,7 +81,10 @@ function opciones(){
 	//alert(nivel);
 	if (nivel == 1 || nivel == 2 || nivel == 3){
 		if (toco == 'negra'){ 
-			GANASTE();
+			document.getElementById("grupTouch").style.display="block";
+			//$("#grupTouch").click(function() { GANASTE();  });
+			$("#grupTouch").on('touchstart', function(event){ alert(1);});
+			//GANASTE();
 		}
 		if (toco == 'verde'){ 
 			document.getElementById("verdeIn").style.display="none";
@@ -134,6 +137,8 @@ function botonesError(){
 	document.getElementById("verdeOff").style.display = 'none';
 	document.getElementById("naranjaOff").style.display = 'none';
 }
+
+
 
 function GANASTE(){
 	document.getElementById("ganaste").style.display="block";

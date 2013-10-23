@@ -261,3 +261,16 @@ body{
 .avanza{
 	background-color: red;
 }
+
+#grupTouch{
+	background-image: url(../imagenes/lugar.png);
+	width: 200px;
+	height: 200px;
+	display: none;
+}
+
+.optTouch1{
+	position: absolute;
+	top: 305px;
+	left: 188px;
+}

@@ -18,10 +18,6 @@
         botonesError();
         cintas();
 
-        document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
-        document.getElementById('movieShow').addEventListener('touchmove',  function(e){
-          console.log(e.touches[0].pageX);
-        },  false);
       });
     </script> 
 </head>
@@ -47,7 +43,7 @@
       <div id="wrap">
         <!-- - - - - - - - - - -->
         <div id="OPCION1">
-          <div><div id="sinA"></div><div id="conA"></div></div>
+          <div><div id="grupTouch" class="optTouch1"></div><div id="sinA"></div><div id="conA"></div></div>
         </div>
         <!-- - - - - - - - - - -->
 
