@@ -29,9 +29,9 @@ window.addEventListener('load', function(){
   var dist = parseInt(touchobj.clientX) - startx // calculate dist traveled by touch point
  // move box according to starting pos plus dist
  // with lower limit 0 and upper limit 380 so it doesn't move outside track:
-  /*box2.style.left = ( (boxleft + dist > 380)? 380 : (boxleft + dist < 0)? 0 : boxleft + dist ) + 'px'
+ box2.style.left = /*( (boxleft + dist > 380)? 380 : (boxleft + dist < 0)? 0 : boxleft + dist ) + 'px'*/
   e.preventDefault()
- }, false)*/
+ }, false)
  
 }, false)
  
