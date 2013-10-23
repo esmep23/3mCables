@@ -15,6 +15,8 @@
       $( document ).ready(function(){
         console.log("empieza!");
         con();
+        botonesError();
+        cintas();
       });
     </script> 
 </head>
@@ -23,120 +25,81 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <div id="page1">
       <div id="espacio"></div>
-      <div id="opciones">
+      <div id="intOpciones">
         <ul>
-            <li id="cintaNegra"><div ></div></li>
-            <li id="cintaVerde"><div ></div></li>
-            <li id="cintaNaranja"><div ></div></li>
+            <li><img src="imagenes/cinta_negra.png" class="cintas" /></li>
+            <li><img src="imagenes/cinta_verde.png" class="cintas" /></li>
+            <li><img src="imagenes/cinta_naranja.png" class="cintas" /></li>
         </ul>
-        <input id="boton" type="button" value="AVANZA" onClick="javascript:avanzoJuego();">
+        <input id="avanzaBoton" type="button" value="AVANZA" onClick="javascript:avanzoJuego();">
       </div>
     </div>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <div id="page2">
+
       <div id="wrap">
         <!-- - - - - - - - - - -->
         <div id="OPCION1">
           <div><div id="sinA"></div><div id="conA"></div></div>
-          <div id="opciones">
-            <ul>
-              <li id="cintaNegra"><div ></div></li>
-              <li id="cintaVerde"><div ></div></li>
-              <li id="cintaNaranja"><div ></div></li>
-            </ul>
-            <input id="boton" type="button" value="TERMINAR" onClick="javascript:avanzoNivel();">
-          </div>
         </div>
         <!-- - - - - - - - - - -->
 
         <!-- - - - - - - - - - -->
         <div id="OPCION2">
           <div><div id="sinB"></div><div id="conB"></div></div>
-          <div id="opciones">
-            <ul>
-              <li id="cintaNegra"><div ></div></li>
-              <li id="cintaVerde"><div ></div></li>
-              <li id="cintaNaranja"><div ></div></li>
-            </ul>
-            <input id="boton" type="button" value="TERMINAR" onClick="javascript:avanzoNivel();">
-          </div>
         </div>
         <!-- - - - - - - - - - -->
 
         <!-- - - - - - - - - - -->
         <div id="OPCION3">
           <div><div id="sinC"></div><div id="conC"></div></div>
-          <div id="opciones">
-            <ul>
-              <li id="cintaNegra"><div ></div></li>
-              <li id="cintaVerde"><div ></div></li>
-              <li id="cintaNaranja"><div ></div></li>
-            </ul>
-            <input id="boton" type="button" value="TERMINAR" onClick="javascript:avanzoNivel();">
-          </div>
         </div>
         <!-- - - - - - - - - - -->
 
         <!-- - - - - - - - - - -->
         <div id="OPCION4">
           <div><div id="sinD"></div><div id="conD"></div></div>
-          <div id="opciones">
-            <ul>
-              <li id="cintaNegra"><div ></div></li>
-              <li id="cintaVerde"><div ></div></li>
-              <li id="cintaNaranja"><div ></div></li>
-            </ul>
-            <input id="boton" type="button" value="TERMINAR" onClick="javascript:avanzoNivel();">
-          </div>
         </div>
         <!-- - - - - - - - - - -->
 
         <!-- - - - - - - - - - -->
         <div id="OPCION5">
           <div><div id="sinE"></div><div id="conE"></div></div>
-          <div id="opciones">
-            <ul>
-              <li id="cintaNegra"><div ></div></li>
-              <li id="cintaVerde"><div ></div></li>
-              <li id="cintaNaranja"><div ></div></li>
-            </ul>
-            <input id="boton" type="button" value="TERMINAR" onClick="javascript:avanzoNivel();">
-          </div>
         </div>
         <!-- - - - - - - - - - -->
 
         <!-- - - - - - - - - - -->
         <div id="OPCION6">
           <div><div id="sinF"></div><div id="conF"></div></div>
-          <div id="opciones">
-            <ul>
-              <li id="cintaNegra"><div ></div></li>
-              <li id="cintaVerde"><div ></div></li>
-              <li id="cintaNaranja"><div ></div></li>
-            </ul>
-            <input id="boton" type="button" value="TERMINAR" onClick="javascript:avanzoNivel();">
-          </div>
         </div>
         <!-- - - - - - - - - - -->
 
         <!-- - - - - - - - - - -->
         <div id="OPCION7">
           <div><div id="sinG"></div><div id="conG"></div></div>
-          <div id="opciones">
-            <ul>
-              <li id="cintaNegra"><div ></div></li>
-              <li id="cintaVerde"><div ></div></li>
-              <li id="cintaNaranja"><div ></div></li>
-            </ul>
-            <input id="boton" type="button" value="TERMINAR" onClick="javascript:avanzoNivel();">
-          </div>
         </div>
         <!-- - - - - - - - - - -->
 
       </div>
-
+          <div id="opciones">
+            <ul>
+              <li>
+                <div id="negraIn"></div>
+                <div id="negraOff"></div>
+              </li>
+              <li>
+                <div id="verdeIn"></div>
+                <div id="verdeOff"></div>
+              </li>
+              <li>
+                <div id="naranjaIn"></div>
+                <div id="naranjaOff"></div>
+              </li>
+            </ul>
+            <input id="terminarBoton" type="button" value="TERMINAR" onClick="javascript:avanzoNivel();">
+          </div>
       <!-- - - - - - - - - - -->
       <div id="ganaste"><img src="imagenes/bien.png" /></div>
       <!-- - - - - - - - - - -->
