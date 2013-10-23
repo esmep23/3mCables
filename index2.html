@@ -6,92 +6,54 @@
 #box2{
 }
 </style>
-  </head>  <body> 
+  </head>  
 <script type="text/javascript">
- /* 
-window.addEventListener('load', function(){
- alert(1111);
- var box2 = document.getElementById('box2'),
- boxleft, // left position of moving box
- startx, // starting x coordinate of touch point
- dist = 0, // distance traveled by touch point
- touchobj = null // Touch object holder
- 
- box2.addEventListener('touchstart', function(e){
-  touchobj = e.changedTouches[0] // reference first touch point
-  boxleft = parseInt(box2.style.left) // get left position of box
-  startx = parseInt(touchobj.clientX) // get x coord of touch point
-  e.preventDefault() // prevent default click behavior
- }, false)
- 
- box2.addEventListener('touchmove', function(e){
-  touchobj = e.changedTouches[0] // reference first touch point for this event
-  var dist = parseInt(touchobj.clientX) - startx // calculate dist traveled by touch point
- // move box according to starting pos plus dist
- // with lower limit 0 and upper limit 380 so it doesn't move outside track:
- box2.style.left = ( (boxleft + dist > 380)? 380 : (boxleft + dist < 0)? 0 : boxleft + dist ) + 'px'
-  e.preventDefault()
- }, false)
- 
-}, false)
- 
-
- window.addEventListener('load', function(){
- 
- var box1 = document.getElementById('box1')
- var statusdiv = document.getElementById('statusdiv')
- var startx = 0
- var dist = 0
- 
-
- box1.addEventListener('touchstart', function(e){ 
-  var touchobj = e.changedTouches[0] // reference first touch point (ie: first finger)
-  startx = parseInt(touchobj.clientX) // get x position of touch point relative to left edge of browser
-  statusdiv.innerHTML = 'Status: touchstart<br /> ClientX: ' + startx + 'px'
-  e.preventDefault()
+   var logDiv = document.getElementById("log");
+  var logDetailsDiv = document.getElementById("logDetails");
   
- }, false)
- box1.addEventListener('touchmove', function(e){ 
-  var touchobj = e.changedTouches[0] // reference first touch point for this event
-  var dist = parseInt(touchobj.clientX) - startx
-  statusdiv.innerHTML = 'Status: touchmove<br /> Horizontal distance traveled: ' + dist + 'px'
-  e.preventDefault()
+  function log( text ) {
+      logDiv.innerHTML = text;
+  }
 
- }, false)
+  function inspect( obj ) {
+    if (typeof obj === "undefined") {
+        return "undefined";
+    }
+    var _props = [];
 
- box1.addEventListener('touchend', function(e){ 
-  var touchobj = e.changedTouches[0] // reference first touch point for this event
-  statusdiv.innerHTML = 'Status: touchend<br /> Resting x coordinate: ' + touchobj.clientX + 'px'
-  e.preventDefault()
-  alert(1);
-  alert(touchobj.clientX);
- 
- }, false)
- 
-}, false)
-*/
+      for ( var i in obj ) {
+          _props.push( i + " : " + obj[i] ); 
+      }
+      return " {" + _props.join( ",<br>" ) + "} ";
+  }
+
+  function touchStart( e ) {
+    var box = document.getElementById("box");
+    box.style.background = "green";
+    log( "Touch Start! " + e.type + " event=" + inspect( e ) );
+    logDetails( inspect( e.touches.item(0) ) );
+    e.preventDefault();
+    return false;
+  }
+  
+  function touchMove( e ) {
+    var targetEvent =  e.touches.item(0);
+    var box = document.getElementById("box");
+    box.style.background = "yellow";
+    box.style.left = targetEvent.clientX + "px";
+    box.style.top= targetEvent.clientY + "px";
+    log("[x,y]=" + targetEvent.clientX + "," + targetEvent.clientY );
+    logDetails( inspect( e ) );
+    e.preventDefault();
+    return false;
+  }
+
 </script>
-<!-- 
-<div id="track" class="track">
-<div id="box2" style="left:0; top:0; background-color:red; width:80px; position:absolute;">Drag Me</div>
+<body> 
+  <div style="height:250px">
+ <div id="log"></div>
+ <div id="logDetails"></div>
+ <div id="box" style="height:225px;width:225px;background:red;position:absolute;" ontouchmove="touchMove(event)" ontouchstart="touchStart(event)"></div>
 </div>
 
-<div class="box" id="box1">
-<h3> Touch Me! </h3>
-</div>
- 
-<h3 id="statusdiv">Status</h3>
--->
-<div id="status">x, y</div>
-<script>
-    /*$('html').on("mousemove touchmove", function(e){
-        $('#status').html(e.pageX +', '+ e.pageY);
-        e.preventDefault();
-    });*/
-     $('html').bind('touchmove', function(e){ 
-        var touchobj = e.changedTouches[0] 
-        $('#status').html(touchobj.clientX +', '+ touchobj.clientY);
-        e.preventDefault();
-    });
-</script>
 </body></html>
