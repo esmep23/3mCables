@@ -1,41 +1,33 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
-    <style type="text/css">
-      a {
-        color:black;
-        display:block;
-        margin:10px 0px;
-      }
-    </style>
+<!doctype html />
+<html><head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+  $(document).ready(
+ function(){
 
-    <script type="text/javascript">
-      function onload() {
-        document.getElementById('touchstart').addEventListener('touchstart', hello, false);
-        document.getElementById('touchend').addEventListener('touchend', bye, false);
-        $('element').bind("touchmove", function(e) {
-            $(element2).html(e.pageX + "," + e.pageY);
-        }
-      }
+var flip = document.getElementById('flip');
+    var context = flip.getContext('2d');   
+context.fillStyle = "rgb(255,255,255)";   
+context.fillRect(0, 0, 500, 500);
 
-      function hello() {
-        alert('hello');
-      }
+      $("a").click(function(event){alert("Thanks for visiting!");});
+   $("#flip").mousemove(function(event){
+      var x, y;
 
-      function bye() {
-        alert('bye');
-      }
-    </script>
 
-    <title>Touch Example</title>
-  </head>
-  <body onload="onload();">
-    <h1>Touch</h1>
-    <a href="#" ontouchstart="hello();return false;">Attribute: ontouchstart</a>
-    <a href="#" ontouchend="bye();return false;">Attribute: ontouchend</a>
-    <a href="#" id="touchstart">addEventListener: touchstart</a>
-    <a href="#" id="touchend">addEventListener: touchend</a>
-    <div id="element"><img src="imagenes/cinta_naranja.png" /></div>
-  </body>
-</html>
+    x = event.layerX;
+    y = event.layerY;
+
+
+    //alert("mouse pos"+event.layerX );
+    var flip = document.getElementById('flip');
+    var context = flip.getContext('2d');   
+context.fillStyle = "rgb(255,0,0)";   
+context.fillRect(x, y, 5, 5);
+    }
+   );
+  }
+  );    
+  </script>
+  </head>  <body bgcolor="#000000"> <a href="http://jquery.com/">jQuery</a><canvas id="flip" width="500" height="500">
+  This text is displayed if your browser does not support HTML5 Canvas.</canvas> </body></html>
