@@ -62,7 +62,7 @@ window.addEventListener('load', function(){
   var touchobj = e.changedTouches[0] // reference first touch point for this event
   statusdiv.innerHTML = 'Status: touchend<br /> Resting x coordinate: ' + touchobj.clientX + 'px'
   e.preventDefault()
-  if (dist == 490 || dist == 350 || dist == 520){ 
+  if (touchobj.clientX == 490 || touchobj.clientX == 350 || touchobj.clientX == 520){ 
   alert(llegue);
  }
  }, false)
