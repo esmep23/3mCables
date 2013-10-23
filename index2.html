@@ -2,58 +2,15 @@
 <html><head>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
-<style>
-#box2{
-}
-</style>
-  </head>  
 <script type="text/javascript">
-   var logDiv = document.getElementById("log");
-  var logDetailsDiv = document.getElementById("logDetails");
-  
-  function log( text ) {
-      logDiv.innerHTML = text;
-  }
-
-  function inspect( obj ) {
-    if (typeof obj === "undefined") {
-        return "undefined";
-    }
-    var _props = [];
-
-      for ( var i in obj ) {
-          _props.push( i + " : " + obj[i] ); 
-      }
-      return " {" + _props.join( ",<br>" ) + "} ";
-  }
-
-  function touchStart( e ) {
-    var box = document.getElementById("box");
-    box.style.background = "green";
-    log( "Touch Start! " + e.type + " event=" + inspect( e ) );
-    logDetails( inspect( e.touches.item(0) ) );
-    e.preventDefault();
-    return false;
-  }
-  
-  function touchMove( e ) {
-    var targetEvent =  e.touches.item(0);
-    var box = document.getElementById("box");
-    box.style.background = "yellow";
-    box.style.left = targetEvent.clientX + "px";
-    box.style.top= targetEvent.clientY + "px";
-    log("[x,y]=" + targetEvent.clientX + "," + targetEvent.clientY );
-    logDetails( inspect( e ) );
-    e.preventDefault();
-    return false;
-  }
+$('#someElm').bind('touchmove',function(e){
+      e.preventDefault();
+      //CODE GOES HERE
+});
+</script>
+</head>  
+<body> 
+  <div id="someElm">dfgdfgdfg</div>
 
 </script>
-<body> 
-  <div style="height:250px">
- <div id="log"></div>
- <div id="logDetails"></div>
- <div id="box" style="height:225px;width:225px;background:red;position:absolute;" ontouchmove="touchMove(event)" ontouchstart="touchStart(event)"></div>
-</div>
-
 </body></html>
