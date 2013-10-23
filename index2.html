@@ -89,7 +89,8 @@ window.addEventListener('load', function(){
         e.preventDefault();
     });*/
      $('html').bind('touchmove', function(e){ 
-        $('#status').html(e.pageX +', '+ e.pageY);
+        var touchobj = e.changedTouches[0] 
+        $('#status').html(touchobj.clientX +', '+ touchobj.clientY);
         e.preventDefault();
     });
 </script>
