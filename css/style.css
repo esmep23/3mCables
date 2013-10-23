@@ -262,15 +262,67 @@ body{
 	background-color: red;
 }
 
-#grupTouch{
-	background-image: url(../imagenes/lugar.png);
+
+#optTouch1{
+	/*background-image: url(../imagenes/lugar.png);*/
 	width: 200px;
 	height: 200px;
 	display: none;
-}
-
-.optTouch1{
 	position: absolute;
 	top: 305px;
 	left: 188px;
+}
+#optTouch2{
+	/*background-image: url(../imagenes/lugar.png);*/
+	width: 200px;
+	height: 200px;
+	display: none;
+	position: absolute;
+	top: 305px;
+	left: 188px;
+}
+#optTouch3{
+	/*background-image: url(../imagenes/lugar.png);*/
+	width: 200px;
+	height: 200px;
+	display: none;	
+	position: absolute;
+	top: 327px;
+	left: 188px;
+}
+#optTouch4{
+	/*background-image: url(../imagenes/lugar.png);*/
+	width: 200px;
+	height: 200px;
+	display: none;
+	position: absolute;
+	top: 382px;
+	left: 321px;
+}
+#optTouch5{
+	/*background-image: url(../imagenes/lugar.png);*/
+	width: 200px;
+	height: 200px;
+	display: none;
+	position: absolute;
+	top: 198px;
+	left: 188px;
+}
+#optTouch6{
+	/*background-image: url(../imagenes/lugar.png);*/
+	width: 200px;
+	height: 200px;
+	display: none;
+	position: absolute;
+	top: 250px;
+	left: 131px;
+}
+#optTouch7{
+	/*background-image: url(../imagenes/lugar.png);*/
+	width: 200px;
+	height: 200px;
+	display: none;	
+	position: absolute;
+	top: 145px;
+	left: 292px;
 }

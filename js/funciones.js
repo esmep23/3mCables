@@ -81,10 +81,21 @@ function opciones(){
 	//alert(nivel);
 	if (nivel == 1 || nivel == 2 || nivel == 3){
 		if (toco == 'negra'){ 
-			document.getElementById("grupTouch").style.display="block";
-			//$("#grupTouch").click(function() { GANASTE();  });
-			$("#grupTouch").on('touchmove', function(event){ alert(1);});
+			if(nivel == 1){
+			document.getElementById("optTouch1").style.display="block";
+			$("#grupTouch").on('touchmove', function(event){ GANASTE();});
 			//GANASTE();
+			}
+			if(nivel == 2){
+			document.getElementById("optTouch2").style.display="block";
+			$("#grupTouch").on('touchmove', function(event){ GANASTE();});
+			//GANASTE();
+			}
+			if(nivel == 3){
+			document.getElementById("optTouch3").style.display="block";
+			$("#grupTouch").on('touchmove', function(event){ GANASTE();});
+			//GANASTE();
+			}
 		}
 		if (toco == 'verde'){ 
 			document.getElementById("verdeIn").style.display="none";
@@ -105,7 +116,21 @@ function opciones(){
 			PERDISTE();
 		}
 		if (toco == 'verde'){ 
-			GANASTE();
+			if(nivel == 4){
+			document.getElementById("optTouch4").style.display="block";
+			$("#grupTouch").on('touchmove', function(event){ GANASTE();});
+			//GANASTE();
+			}
+			if(nivel == 5){
+			document.getElementById("optTouch5").style.display="block";
+			$("#grupTouch").on('touchmove', function(event){ GANASTE();});
+			//GANASTE();
+			}
+			if(nivel == 6){
+			document.getElementById("optTouch6").style.display="block";
+			$("#grupTouch").on('touchmove', function(event){ GANASTE();});
+			//GANASTE();
+			}
 		}
 		if (toco == 'naranja'){ 
 			document.getElementById("naranjaIn").style.display="none";
@@ -126,7 +151,9 @@ function opciones(){
 			PERDISTE();
 		}
 		if (toco == 'naranja'){ 
-			GANASTE();
+			document.getElementById("optTouch7").style.display="block";
+			$("#grupTouch").on('touchmove', function(event){ GANASTE();});
+			//GANASTE();
 		}
 	}
 
