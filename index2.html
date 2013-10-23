@@ -14,6 +14,9 @@
       function onload() {
         document.getElementById('touchstart').addEventListener('touchstart', hello, false);
         document.getElementById('touchend').addEventListener('touchend', bye, false);
+        $('element').bind("touchmove", function(e) {
+            $(element2).html(e.pageX + "," + e.pageY);
+        }
       }
 
       function hello() {
@@ -33,5 +36,6 @@
     <a href="#" ontouchend="bye();return false;">Attribute: ontouchend</a>
     <a href="#" id="touchstart">addEventListener: touchstart</a>
     <a href="#" id="touchend">addEventListener: touchend</a>
+    <div id="element"><img src="imagenes/cinta_naranja.png" /></div>
   </body>
 </html>
