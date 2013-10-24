@@ -83,18 +83,18 @@ function opciones(){
 		if (toco == 'negra'){ 
 			if(nivel == 1){
 			document.getElementById("optTouch1").style.display="block";
-			$("#grupTouch").on('touchmove', function(event){ GANASTE();});
+			$("#grupTouch").on('touchstart', function(event){ GANASTE();});
 			//GANASTE();
 			}
 			if(nivel == 2){
 			document.getElementById("optTouch2").style.display="block";
-			$("#grupTouch").on('touchmove', function(event){ GANASTE();});
-			//GANASTE();
+			//$("#grupTouch").on('touchstart', function(event){ GANASTE();});
+			GANASTE();
 			}
 			if(nivel == 3){
 			document.getElementById("optTouch3").style.display="block";
-			$("#grupTouch").on('touchmove', function(event){ GANASTE();});
-			//GANASTE();
+			//$("#grupTouch").on('touchstart', function(event){ GANASTE();});
+			GANASTE();
 			}
 		}
 		if (toco == 'verde'){ 
@@ -118,18 +118,18 @@ function opciones(){
 		if (toco == 'verde'){ 
 			if(nivel == 4){
 			document.getElementById("optTouch4").style.display="block";
-			$("#grupTouch").on('touchmove', function(event){ GANASTE();});
-			//GANASTE();
+			//$("#grupTouch").on('touchstart', function(event){ GANASTE();});
+			GANASTE();
 			}
 			if(nivel == 5){
 			document.getElementById("optTouch5").style.display="block";
-			$("#grupTouch").on('touchmove', function(event){ GANASTE();});
-			//GANASTE();
+			//$("#grupTouch").on('touchstart', function(event){ GANASTE();});
+			GANASTE();
 			}
 			if(nivel == 6){
 			document.getElementById("optTouch6").style.display="block";
-			$("#grupTouch").on('touchmove', function(event){ GANASTE();});
-			//GANASTE();
+			//$("#grupTouch").on('touchstart', function(event){ GANASTE();});
+			GANASTE();
 			}
 		}
 		if (toco == 'naranja'){ 
@@ -152,8 +152,8 @@ function opciones(){
 		}
 		if (toco == 'naranja'){ 
 			document.getElementById("optTouch7").style.display="block";
-			$("#grupTouch").on('touchmove', function(event){ GANASTE();});
-			//GANASTE();
+			//$("#grupTouch").on('touchstart', function(event){ GANASTE();});
+			GANASTE();
 		}
 	}
 
