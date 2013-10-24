@@ -20,9 +20,10 @@
 
       });
 
-      $(window).on('touchstart', function(event) {
-        event.preventDefault();
-      });
+      window.addEventListener('touchstart', function(event) {
+          var emulate = event.targetTouches.length == 2;
+          alert(emulate ? true : false);
+      }, false);
 
     </script> 
 </head>
