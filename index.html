@@ -25,7 +25,9 @@
       }, false); 
 
        document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
-       
+        document.getElementById('content').addEventListener('touchmove',  function(e){
+          console.log(e.touches[0].pageX);
+        },  false);
 
 
     </script> 
