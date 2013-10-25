@@ -7,9 +7,10 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <link rel="stylesheet" href="css/style.css" media="screen" />
-    <script type="text/javascript" src="cordova.js"></script>
+    <!--<script type="text/javascript" src="cordova.js"></script>-->
     <script type="text/javascript" src="js/funciones.js"></script>
     <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/smokeEffect.js"></script>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <script type="text/javascript">
       $( document ).ready(function(){
@@ -34,13 +35,21 @@
   <div id="content">
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <div id="page1">
-      <div id="espacio"></div>
+      
+      <div id="espacio">
+      <div id="smokeSpawnPoint">
+      <img src='imagenes/imagen1.png' alt='Chimenea' />
+      </div>
+
+      <script type='text/javascript'>
+      SmokeEffect.makeEffect("smokeSpawnPoint", 24, 12);
+      SmokeEffect.imgLocation = "imagenes/imagen2.png";
+      SmokeEffect.smokeWidth = 100;
+      SmokeEffect.smokeHeight = 100;
+      </script>
+
+</div>
       <div id="intOpciones">
-        <ul>
-            <li><img src="imagenes/cinta_negra.png" class="cintas" /></li>
-            <li><img src="imagenes/cinta_verde.png" class="cintas" /></li>
-            <li><img src="imagenes/cinta_naranja.png" class="cintas" /></li>
-        </ul>
         <input id="avanzaBoton" type="button" value="AVANZA" onClick="javascript:avanzoJuego();">
       </div>
     </div>
