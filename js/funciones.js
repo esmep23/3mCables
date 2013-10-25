@@ -8,10 +8,10 @@ function avanzoJuego(e){
 	document.getElementById("page1").style.display="none";
 }
 
-function avanzoNivel(){
+function avanzoNivel(e){ alert(nivel);
 	nivel++;
+	alert(nivel);
 	document.getElementById("ganaste").style.display="none";
-	document.getElementById("terminarBoton").style.display="none";
 	if(nivel == 1){ nivelesNone(); botonesError(); 
 		document.getElementById("OPCION1").style.display="block"; }
 	if(nivel == 2){ nivelesNone(); botonesError(); 
@@ -27,8 +27,6 @@ function avanzoNivel(){
 	if(nivel == 7){ nivelesNone(); botonesError(); 
 		document.getElementById("OPCION7").style.display="block"; }
 	if(nivel > 7){ window.location.reload(); }
-	//alert(nivel);
-	botonesError();
 }
 
 function puntuacion(){
@@ -41,15 +39,6 @@ function cintas(){
     $( "#negraIn" ).click(function() { toco="negra"; opciones();  });
     $( "#verdeIn" ).click(function() { toco="verde"; opciones();  });
     $( "#naranjaIn" ).click(function() { toco="naranja"; opciones();  });
-}
-
-function ganaste(){
-	alert('ganaste');
-	puntaje = puntaje+1;
-}
-
-function perdiste(){
-	alert('perdiste');
 }
 
 function nivelesNone(){
@@ -78,23 +67,22 @@ SELECCION
 ---------------------------------------------------------------------------------------------------
 */
 function opciones(){ 
-	//alert(nivel);
 	if (nivel == 1 || nivel == 2 || nivel == 3){
 		if (toco == 'negra'){ 
 			if(nivel == 1){
 			document.getElementById("optTouch1").style.display="block";
-			$("#optTouch1").bind('touchstart', function(event){ GANASTE(); return false;});
-			 //document.getElementById("optTouch1").addEventListener('touchmove', preventDefaultScroll, false);
-			//GANASTE();
+			//$("#optTouch1").bind('touchstart', function(event){ GANASTE(); return false;});
+			GANASTE();
+
 			}
 			if(nivel == 2){
 			document.getElementById("optTouch2").style.display="block";
-			//$("#grupTouch").on('touchstart', function(event){ GANASTE();});
+			//$("#optTouch2").on('touchstart', function(event){ GANASTE(); return false;});
 			GANASTE();
 			}
 			if(nivel == 3){
 			document.getElementById("optTouch3").style.display="block";
-			//$("#grupTouch").on('touchstart', function(event){ GANASTE();});
+			//$("#optTouch3").on('touchstart', function(event){ GANASTE(); return false; });
 			GANASTE();
 			}
 		}
@@ -119,17 +107,17 @@ function opciones(){
 		if (toco == 'verde'){ 
 			if(nivel == 4){
 			document.getElementById("optTouch4").style.display="block";
-			//$("#grupTouch").on('touchstart', function(event){ GANASTE();});
+			//$("#optTouch4").on('touchstart', function(event){ GANASTE(); return false; });
 			GANASTE();
 			}
 			if(nivel == 5){
 			document.getElementById("optTouch5").style.display="block";
-			//$("#grupTouch").on('touchstart', function(event){ GANASTE();});
+			//$("#optTouch5").on('touchstart', function(event){ GANASTE(); return false; });
 			GANASTE();
 			}
 			if(nivel == 6){
 			document.getElementById("optTouch6").style.display="block";
-			//$("#grupTouch").on('touchstart', function(event){ GANASTE();});
+			//$("#optTouch6").on('touchstart', function(event){ GANASTE(); return false; });
 			GANASTE();
 			}
 		}
@@ -153,7 +141,7 @@ function opciones(){
 		}
 		if (toco == 'naranja'){ 
 			document.getElementById("optTouch7").style.display="block";
-			//$("#grupTouch").on('touchstart', function(event){ GANASTE();});
+			//$("#optTouch7").on('touchstart', function(event){ GANASTE(); return false; });
 			GANASTE();
 		}
 	}
@@ -170,7 +158,7 @@ function botonesError(){
 
 function GANASTE(){
 	document.getElementById("ganaste").style.display="block";
-	document.getElementById("terminarBoton").style.display="block";
+	
 	if (nivel == 1){
 		document.getElementById("sinA").style.display="none";
 		document.getElementById("conA").style.display="block";
@@ -199,12 +187,15 @@ function GANASTE(){
 		document.getElementById("sinG").style.display="none";
 		document.getElementById("conG").style.display="block";
 	}
+
+    
+
 }
 function PERDISTE(){
 	document.getElementById("perdiste").style.display="block";
 	setInterval(function(){
 		window.location.reload();
-	},5000);
+	},3000);
 	
 }
 /*
