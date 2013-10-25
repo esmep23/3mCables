@@ -125,6 +125,12 @@ body{
 	background-image: url(../imagenes/cinta_verde.png);
 	background-repeat: no-repeat;
 }
+#verdeIn:hover{
+	border-radius: 12px;
+	-webkit-box-shadow: 1px 4px 21px 4px rgba(0,0,0,0.63);
+	-moz-box-shadow: 1px 4px 21px 4px rgba(0,0,0,0.63);
+	box-shadow: 1px 4px 21px 4px rgba(0,0,0,0.63);
+}
 #verdeOff{
 	width: 100px;
 	height: 100px;
@@ -136,6 +142,12 @@ body{
 	height: 100px;
 	background-image: url(../imagenes/cinta_naranja.png);
 	background-repeat: no-repeat;
+}
+#naranjaIn:hover{
+	border-radius: 12px;
+	-webkit-box-shadow: 1px 4px 21px 4px rgba(0,0,0,0.63);
+	-moz-box-shadow: 1px 4px 21px 4px rgba(0,0,0,0.63);
+	box-shadow: 1px 4px 21px 4px rgba(0,0,0,0.63);
 }
 #naranjaOff{
 	width: 100px;
