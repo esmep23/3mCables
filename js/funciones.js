@@ -77,7 +77,7 @@ function con(){
 SELECCION
 ---------------------------------------------------------------------------------------------------
 */
-function opciones(){
+function opciones(){ 
 	//alert(nivel);
 	if (nivel == 1 || nivel == 2 || nivel == 3){
 		if (toco == 'negra'){ 
