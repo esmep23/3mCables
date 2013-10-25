@@ -29,7 +29,7 @@ body{
 	margin: 0;
 	padding: 0;	
 	display: none;
-	background-color: purple;
+	background-color: black;
 }
 
 #avanzaBoton{
@@ -96,6 +96,9 @@ body{
 #intOpciones{
 	width: 500px;
 	margin-top: 69px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 #intOpciones li{
 	float: left;
@@ -345,5 +348,56 @@ body{
 	position: absolute;
 	z-index: 600;
 	top: 272px;
-	left: 202px;
+	left: 245px;
 }
+#smokeSpawnPoint2{
+	position: absolute;
+	z-index: 600;
+	top: 272px;
+	left: 320px;
+}
+#smokeSpawnPoint3{
+	position: absolute;
+	z-index: 600;
+	top: 272px;
+	left: 820px;
+}
+
+#llama1{ 
+	background-image: url(../imagenes/fuego1.png);
+	position: absolute;
+	width: 45px;	
+	height: 52px;
+	z-index: 600;
+	top: 272px;
+	left: 206px;}
+
+#llama1roll{
+	background-image: url(../imagenes/fuego1_roll.png)!important;
+	position: absolute;
+	width: 45px;	
+	height: 52px;
+	z-index: 600;
+	top: 272px;
+	left: 206px;
+	}
+
+
+#llama2{ 
+	background-image: url(../imagenes/fuego2.png);
+	position: absolute;
+	width: 60px;	
+	height: 69px;
+	z-index: 600;
+	top: 195px;
+	left: 286px;}
+
+#llama2roll{
+	background-image: url(../imagenes/fuego2_roll.png)!important;
+	position: absolute;
+	width: 60px;	
+	height: 69px;
+	z-index: 600;
+	top: 195px;
+	left: 286px;
+	}

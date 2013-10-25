@@ -11,6 +11,8 @@
     <script type="text/javascript" src="js/funciones.js"></script>
     <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="js/smokeEffect.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <script type="text/javascript">
       $( document ).ready(function(){
@@ -18,6 +20,8 @@
         con();
         botonesError();
         cintas();
+        
+   animacion();
 
       });
 
@@ -28,7 +32,6 @@
     };
     document.addEventListener('touchmove', preventDefaultScroll, false);
 
-
     </script> 
 </head>
 <body>
@@ -37,18 +40,38 @@
     <div id="page1">
       
       <div id="espacio">
-      <div id="smokeSpawnPoint">
-      <img src='imagenes/imagen1.png' alt='Chimenea' />
+        <div id="llama1" ></div>
+        <div id="llama1roll" ></div>
+        <div id="llama2" ></div>
+        <div id="llama2roll" ></div>
+        <div id="smokeSpawnPoint">
+        <img src='imagenes/imagen1.png' alt='Chimenea' />
+        </div>
+        <script type='text/javascript'>
+        SmokeEffect.makeEffect("smokeSpawnPoint", 0, 12);
+        SmokeEffect.imgLocation = "imagenes/imagen2.png";
+        SmokeEffect.smokeWidth = 50;
+        SmokeEffect.smokeHeight = 154;
+        </script>
+        <div id="smokeSpawnPoint2">
+        <img src='imagenes/imagen1.png' alt='Chimenea' />
+        </div>
+        <script type='text/javascript'>
+        SmokeEffect.makeEffect("smokeSpawnPoint2", 0, 12);
+        SmokeEffect.imgLocation = "imagenes/imagen2.png";
+        SmokeEffect.smokeWidth = 50;
+        SmokeEffect.smokeHeight = 154;
+        </script>
+        <div id="smokeSpawnPoint3">
+        <img src='imagenes/imagen1.png' alt='Chimenea' />
+        </div>
+        <script type='text/javascript'>
+        SmokeEffect.makeEffect("smokeSpawnPoint3", 0, 12);
+        SmokeEffect.imgLocation = "imagenes/imagen2.png";
+        SmokeEffect.smokeWidth = 50;
+        SmokeEffect.smokeHeight = 154;
+        </script>
       </div>
-
-      <script type='text/javascript'>
-      SmokeEffect.makeEffect("smokeSpawnPoint", 24, 12);
-      SmokeEffect.imgLocation = "imagenes/imagen2.png";
-      SmokeEffect.smokeWidth = 100;
-      SmokeEffect.smokeHeight = 100;
-      </script>
-
-</div>
       <div id="intOpciones">
         <input id="avanzaBoton" type="button" value="AVANZA" onClick="javascript:avanzoJuego();">
       </div>

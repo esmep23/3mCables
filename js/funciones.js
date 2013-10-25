@@ -71,7 +71,7 @@ function opciones(){
 		if (toco == 'negra'){ 
 			if(nivel == 1){
 			document.getElementById("optTouch1").style.display="block";
-			$("#optTouch1").bind('touchmove', function(event){ GANASTE(); return false;});
+			$("#optTouch1").on('touchmove', function(event){ GANASTE(); return false;});
 			//GANASTE();
 
 			}
@@ -203,3 +203,18 @@ function PERDISTE(){
 ANIMACION
 ---------------------------------------------------------------------------------------------------
 */
+function animacion(){
+	setInterval(function(){
+	$("#llama1").animate({opacity:'0'});
+    $("#llama1roll").animate({opacity:'1'});
+    $("#llama1roll").animate({opacity:'0'});
+    $("#llama1").animate({opacity:'1'});
+	},300);
+
+	setInterval(function(){
+	$("#llama2").animate({opacity:'0'});
+    $("#llama2roll").animate({opacity:'1'});
+    $("#llama2roll").animate({opacity:'0'});
+    $("#llama2").animate({opacity:'1'});
+	},300);
+}
