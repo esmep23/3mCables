@@ -8,9 +8,9 @@ function avanzoJuego(e){
 	document.getElementById("page1").style.display="none";
 }
 
-function avanzoNivel(e){ alert(nivel);
+function avanzoNivel(e){ 
 	nivel++;
-	alert(nivel);
+	//alert(nivel);
 	document.getElementById("ganaste").style.display="none";
 	if(nivel == 1){ nivelesNone(); botonesError(); 
 		document.getElementById("OPCION1").style.display="block"; }
