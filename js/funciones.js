@@ -83,7 +83,8 @@ function opciones(){
 		if (toco == 'negra'){ 
 			if(nivel == 1){
 			document.getElementById("optTouch1").style.display="block";
-			$("#grupTouch").bind('touchstart', function(event){ GANASTE(); return false;});
+			$("#optTouch1").bind('touchstart', function(event){ GANASTE(); return false;});
+			 //document.getElementById("optTouch1").addEventListener('touchmove', preventDefaultScroll, false);
 			//GANASTE();
 			}
 			if(nivel == 2){
