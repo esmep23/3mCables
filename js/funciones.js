@@ -71,18 +71,18 @@ function opciones(){
 		if (toco == 'negra'){ 
 			if(nivel == 1){
 			document.getElementById("optTouch1").style.display="block";
-			$("#optTouch1").bind('touchstart', function(event){ GANASTE(); return false;});
+			$("#optTouch1").bind('touchmove', function(event){ GANASTE(); return false;});
 			//GANASTE();
 
 			}
 			if(nivel == 2){
 			document.getElementById("optTouch2").style.display="block";
-			$("#optTouch2").on('touchstart', function(event){ GANASTE(); return false;});
+			$("#optTouch2").on('touchmove', function(event){ GANASTE(); return false;});
 			//GANASTE();
 			}
 			if(nivel == 3){
 			document.getElementById("optTouch3").style.display="block";
-			$("#optTouch3").on('touchstart', function(event){ GANASTE(); return false; });
+			$("#optTouch3").on('touchmove', function(event){ GANASTE(); return false; });
 			//GANASTE();
 			}
 		}
@@ -107,17 +107,17 @@ function opciones(){
 		if (toco == 'verde'){ 
 			if(nivel == 4){
 			document.getElementById("optTouch4").style.display="block";
-			$("#optTouch4").on('touchstart', function(event){ GANASTE(); return false; });
+			$("#optTouch4").on('touchmove', function(event){ GANASTE(); return false; });
 			//GANASTE();
 			}
 			if(nivel == 5){
 			document.getElementById("optTouch5").style.display="block";
-			$("#optTouch5").on('touchstart', function(event){ GANASTE(); return false; });
+			$("#optTouch5").on('touchmove', function(event){ GANASTE(); return false; });
 			//GANASTE();
 			}
 			if(nivel == 6){
 			document.getElementById("optTouch6").style.display="block";
-			$("#optTouch6").on('touchstart', function(event){ GANASTE(); return false; });
+			$("#optTouch6").on('touchmove', function(event){ GANASTE(); return false; });
 			//GANASTE();
 			}
 		}
@@ -141,7 +141,7 @@ function opciones(){
 		}
 		if (toco == 'naranja'){ 
 			document.getElementById("optTouch7").style.display="block";
-			$("#optTouch7").on('touchstart', function(event){ GANASTE(); return false; });
+			$("#optTouch7").on('touchmove', function(event){ GANASTE(); return false; });
 			//GANASTE();
 		}
 	}
