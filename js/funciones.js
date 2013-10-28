@@ -32,10 +32,9 @@ function avanzoNivel(){
 
 
 function cintas(e){ 
-	alert('prueba');
-    $("#negraIn").on("touchstart",function() { toco="negra"; alert(toco); opciones();  });
-    $("#verdeIn").on("touchstart",function() { toco="verde"; alert(toco); opciones();  });
-    $("#naranjaIn").on("touchstart",function() { toco="naranja"; alert(toco); opciones();  });
+    $("#negraIn").on("touchstart",function() { toco="negra";  opciones();  });
+    $("#verdeIn").on("touchstart",function() { toco="verde";  opciones();  });
+    $("#naranjaIn").on("touchstart",function() { toco="naranja";  opciones();  });
 }
 
 function nivelesNone(){
