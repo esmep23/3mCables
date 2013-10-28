@@ -74,19 +74,18 @@ function opciones(){
 		if (toco == 'negra'){ 
 			if(nivel == 1){
 			document.getElementById("optTouch1").style.display="block";
-			//$("#optTouch1").on('touchmove', function(event){ GANASTE(); return false;});
-			GANASTE();
-
+			$("#optTouch1").on('touchmove', function(event){ GANASTE(); return false;});
+			//GANASTE();
 			}
 			if(nivel == 2){
 			document.getElementById("optTouch2").style.display="block";
-			//$("#optTouch2").on('touchmove', function(event){ GANASTE(); return false;});
-			GANASTE();
+			$("#optTouch2").on('touchmove', function(event){ GANASTE(); return false;});
+			//GANASTE();
 			}
 			if(nivel == 3){
 			document.getElementById("optTouch3").style.display="block";
-			//$("#optTouch3").on('touchmove', function(event){ GANASTE(); return false; });
-			GANASTE();
+			$("#optTouch3").on('touchmove', function(event){ GANASTE(); return false; });
+			//GANASTE();
 			}
 		}
 		if (toco == 'verde'){ 
@@ -110,18 +109,18 @@ function opciones(){
 		if (toco == 'verde'){ 
 			if(nivel == 4){
 			document.getElementById("optTouch4").style.display="block";
-			//$("#optTouch4").on('touchmove', function(event){ GANASTE(); return false; });
-			GANASTE();
+			$("#optTouch4").on('touchmove', function(event){ GANASTE(); return false; });
+			//GANASTE();
 			}
 			if(nivel == 5){
 			document.getElementById("optTouch5").style.display="block";
-			//$("#optTouch5").on('touchmove', function(event){ GANASTE(); return false; });
-			GANASTE();
+			$("#optTouch5").on('touchmove', function(event){ GANASTE(); return false; });
+			//GANASTE();
 			}
 			if(nivel == 6){
 			document.getElementById("optTouch6").style.display="block";
-			//$("#optTouch6").on('touchmove', function(event){ GANASTE(); return false; });
-			GANASTE();
+			$("#optTouch6").on('touchmove', function(event){ GANASTE(); return false; });
+			//GANASTE();
 			}
 		}
 		if (toco == 'naranja'){ 
@@ -144,8 +143,8 @@ function opciones(){
 		}
 		if (toco == 'naranja'){ 
 			document.getElementById("optTouch7").style.display="block";
-			//$("#optTouch7").on('touchmove', function(event){ GANASTE(); return false; });
-			GANASTE();
+			$("#optTouch7").on('touchmove', function(event){ GANASTE(); return false; });
+			//GANASTE();
 		}
 	}
 
