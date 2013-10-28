@@ -10,9 +10,8 @@ function avanzoJuego(e){
 	
 }
 
-function avanzoNivel(e){ 
-	nivel++;
-	//alert(nivel);
+function avanzoNivel(){ 
+	nivel++
 	document.getElementById("ganaste").style.display="none";
 	if(nivel == 1){ nivelesNone(); botonesError(); 
 		document.getElementById("OPCION1").style.display="block"; }
@@ -31,11 +30,6 @@ function avanzoNivel(e){
 	if(nivel > 7){ window.location.reload(); }
 }
 
-function puntuacion(){
-	puntuacionInicial = 0;
-	PuntajeTotal = 700;
-	/*-------------------*/
-}
 
 function cintas(e){ 
 	alert('prueba');
@@ -190,14 +184,13 @@ function GANASTE(){
 		document.getElementById("conG").style.display="block";
 	}
 
-    
 
 }
 function PERDISTE(){
 	document.getElementById("perdiste").style.display="block";
 	setInterval(function(){
 		window.location.reload();
-	},3000);
+	},2000);
 	
 }
 /*
