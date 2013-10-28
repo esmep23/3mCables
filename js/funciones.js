@@ -2,7 +2,7 @@
 Maruri 2013
 Estefania Pulgar
 */
-function avanzoJuego(e){
+function avanzoJuego(){
 	nivel = 1;
 	document.getElementById("page2").style.display="block";
 	document.getElementById("page1").style.display="none";

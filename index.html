@@ -25,6 +25,10 @@
         animacion();
 
       });
+      
+     $(function() {
+        $("#avanzaBoton").on('touchstart', function(){ avanzoJuego(); });
+     }); 
 
      var preventDefaultScroll = function(event) {
       event.preventDefault();
@@ -32,6 +36,8 @@
       return false;
     };
     document.addEventListener('touchmove', preventDefaultScroll, false);
+
+      
 
     </script> 
 </head>
@@ -53,7 +59,7 @@
       </div>
       <div style="clear:both"></div>
       <div id="intOpciones">
-        <input id="avanzaBoton" type="button" value="AVANZA" onClick="javascript:avanzoJuego();">
+        <input id="avanzaBoton" type="button" value="AVANZA" >
       </div>
     </div>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
