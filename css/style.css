@@ -84,6 +84,8 @@ body{
 	background-image: url(../imagenes/opcion7.jpg);
 }
 
+
+
 /*- - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - -*/
 #opciones{
 	width: 500px;
@@ -92,6 +94,25 @@ body{
 #opciones li{
 	float: left;
 	list-style:none
+}
+#liston{
+	width: 300px;
+	margin-top: -103px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#cinta1{
+	float: left;
+	opacity: 0;
+}
+#cinta2{
+	float: left;
+	opacity: 0;
+}
+#cinta3{
+	float: left;
+	opacity: 0;
 }
 #intOpciones{
 	width: 500px;

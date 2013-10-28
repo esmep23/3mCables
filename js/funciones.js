@@ -6,6 +6,7 @@ function avanzoJuego(e){
 	nivel = 1;
 	document.getElementById("page2").style.display="block";
 	document.getElementById("page1").style.display="none";
+	document.getElementById("espacio").style.display="none";
 }
 
 function avanzoNivel(e){ 
@@ -217,4 +218,15 @@ function animacion(){
     $("#llama2roll").animate({opacity:'0'});
     $("#llama2").animate({opacity:'1'});
 	},300);
+
+	setInterval(function(){
+	$("#cinta1").animate({opacity:'1'});
+	},300);
+	setInterval(function(){
+	$("#cinta2").animate({opacity:'1'});
+	},600);
+	setInterval(function(){
+	$("#cinta3").animate({opacity:'1'});
+	},900);
+	
 }
