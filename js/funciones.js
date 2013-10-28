@@ -6,7 +6,11 @@ function avanzoJuego(e){
 	nivel = 1;
 	document.getElementById("page2").style.display="block";
 	document.getElementById("page1").style.display="none";
-	document.getElementById("espacio").style.display="none";
+
+	document.getElementById("smokeSpawnPoint").style.display="none";
+	document.getElementById("smokeSpawnPoint2").style.display="none";
+	document.getElementById("smokeSpawnPoint3").style.display="none";
+	
 }
 
 function avanzoNivel(e){ 
@@ -37,9 +41,9 @@ function puntuacion(){
 }
 
 function cintas(){
-    $( "#negraIn" ).click(function() { toco="negra"; opciones();  });
-    $( "#verdeIn" ).click(function() { toco="verde"; opciones();  });
-    $( "#naranjaIn" ).click(function() { toco="naranja"; opciones();  });
+    $( "#negraIn" ).on(function() { toco="negra"; opciones();  });
+    $( "#verdeIn" ).on(function() { toco="verde"; opciones();  });
+    $( "#naranjaIn" ).on(function() { toco="naranja"; opciones();  });
 }
 
 function nivelesNone(){
