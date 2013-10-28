@@ -25,6 +25,10 @@ body{
 	background-image: url(../imagenes/principal.jpg);
 }
 
+img.heineken {
+    blend-mode: luminosity;
+}
+
 #page2{
 	margin: 0;
 	padding: 0;	
