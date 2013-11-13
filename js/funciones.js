@@ -208,7 +208,6 @@ function PERDISTE(){
 		document.getElementById("perdiste").style.display="none";
 		avanzoNivel();
 		clearInterval(myInterval);
-		document.getElementById("siguiente").style.display = 'block';
 	},2000);
 	
 }
