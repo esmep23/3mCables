@@ -13,6 +13,7 @@ function avanzoJuego(){
 function avanzoNivel(){ 
 	nivel++
 	document.getElementById("ganaste").style.display="none";
+	document.getElementById("siguiente").style.display="none";
 	if(nivel == 1){ nivelesNone(); botonesError(); 
 		document.getElementById("OPCION1").style.display="block"; }
 	if(nivel == 2){ nivelesNone(); botonesError(); 
@@ -162,6 +163,7 @@ function botonesError(){
 
 function GANASTE(){
 	document.getElementById("ganaste").style.display="block";
+	document.getElementById("siguiente").style.display="block";
 	
 	if (nivel == 1){
 		document.getElementById("sinA").style.display="none";
