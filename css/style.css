@@ -40,6 +40,19 @@ body{
 	background-image: url(../imagenes/boton.png);
 	background-color: transparent;
 }
+#opciones ul li:last-child{
+	float: right;
+}
+#siguiente{
+	width: 153px;
+	height: 39px;
+	border: none;
+	color: white;
+	background-image: url(../imagenes/siguiente.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	margin-top: 23px;
+}
 /*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 #OPCION1{
 	width: 100%;
@@ -83,12 +96,18 @@ body{
 	display: none;
 	background-image: url(../imagenes/opcion7.jpg);
 }
+#OPCION8{
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-image: url(../imagenes/cierre.jpg);
+}
 
 
 
 /*- - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - -*/
 #opciones{
-	width: 500px;
+	width: 600px;
 	margin-top: -154px;
 }
 #opciones li{

@@ -27,8 +27,13 @@ function avanzoNivel(){
 		document.getElementById("OPCION6").style.display="block"; }
 	if(nivel == 7){ nivelesNone(); botonesError(); 
 		document.getElementById("OPCION7").style.display="block"; }
-	if(nivel == 8){
-
+	if(nivel == 8){ nivelesNone(); botonesError(); 
+		document.getElementById("OPCION8").style.display="block"; 
+		document.getElementById("opciones").style.display="none"; 
+		var myEnd = setInterval(function(){
+		window.location.reload();
+		clearInterval(myEnd);
+	},2000);
 	}
 	if(nivel > 8){ window.location.reload(); }
 }
@@ -48,6 +53,7 @@ function nivelesNone(){
 	document.getElementById("OPCION5").style.display="none";
 	document.getElementById("OPCION6").style.display="none";
 	document.getElementById("OPCION7").style.display="none";
+	document.getElementById("OPCION8").style.display="none";
 }
 
 function con(){
@@ -190,6 +196,7 @@ function GANASTE(){
 }
 function PERDISTE(){
 	document.getElementById("perdiste").style.display="block";
+	document.getElementById("siguiente").style.display = 'none';
 	var myInterval = setInterval(function(){
 		//window.location.reload();
 		nivel--;
@@ -200,6 +207,7 @@ function PERDISTE(){
 		document.getElementById("perdiste").style.display="none";
 		avanzoNivel();
 		clearInterval(myInterval);
+		document.getElementById("siguiente").style.display = 'block';
 	},2000);
 	
 }
