@@ -198,7 +198,6 @@ function GANASTE(){
 }
 function PERDISTE(){
 	document.getElementById("perdiste").style.display="block";
-	document.getElementById("siguiente").style.display = 'none';
 	var myInterval = setInterval(function(){
 		//window.location.reload();
 		nivel--;
