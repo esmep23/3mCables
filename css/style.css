@@ -302,7 +302,7 @@ body{
 	top: 29%;
 	left: 34%;
 }
-#perdiste{
+#perdiste1, #perdiste2, #perdiste3{
 	display: none;
 	width: 315px;
 	position: absolute;

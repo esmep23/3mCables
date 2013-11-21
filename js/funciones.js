@@ -105,8 +105,8 @@ function opciones(){
 
 	if (nivel == 4 || nivel == 5 || nivel == 6){
 		if (toco == 'negra'){ 
-			document.getElementById("negroIn").style.display="none";
-			document.getElementById("negroOff").style.display="block";
+			document.getElementById("negraIn").style.display="none";
+			document.getElementById("negraOff").style.display="block";
 			PERDISTE();
 		}
 		if (toco == 'verde'){ 
@@ -135,8 +135,8 @@ function opciones(){
 
 	if (nivel == 7 ){
 		if (toco == 'negra'){ 
-			document.getElementById("negroIn").style.display="none";
-			document.getElementById("negroOff").style.display="block";
+			document.getElementById("negraIn").style.display="none";
+			document.getElementById("negraOff").style.display="block";
 			PERDISTE();
 		}
 		if (toco == 'verde'){ 
@@ -197,7 +197,17 @@ function GANASTE(){
 
 }
 function PERDISTE(){
-	document.getElementById("perdiste").style.display="block";
+	if (nivel == 1 || nivel == 2 || nivel == 3){
+		document.getElementById("perdiste1").style.display="block";
+	}
+	if (nivel == 4 || nivel == 5 || nivel == 6){
+		document.getElementById("perdiste2").style.display="block";
+	}
+	if (nivel == 7 ){
+		document.getElementById("perdiste3").style.display="block";
+	}
+	
+	
 	var myInterval = setInterval(function(){
 		//window.location.reload();
 		nivel--;
@@ -205,7 +215,9 @@ function PERDISTE(){
 		document.getElementById("negraIn").style.display = 'block';
 		document.getElementById("verdeIn").style.display = 'block';
 		document.getElementById("naranjaIn").style.display = 'block';
-		document.getElementById("perdiste").style.display="none";
+		document.getElementById("perdiste1").style.display="none";
+		document.getElementById("perdiste2").style.display="none";
+		document.getElementById("perdiste3").style.display="none";
 		avanzoNivel();
 		clearInterval(myInterval);
 	},2000);
