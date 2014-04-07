@@ -23,6 +23,7 @@ body{
 	padding: 0;	
 	display: block;
 	background-image: url(../imagenes/principal.jpg);
+	background-size: 100% 100%;
 }
 
 #page2{
@@ -60,48 +61,56 @@ body{
 	height: 100%;
 	display: block;
 	background-image: url(../imagenes/opcion1.jpg);
+	background-size: 100% 100%;
 }
 #OPCION2{
 	width: 100%;
 	height: 100%;
 	display: none;
 	background-image: url(../imagenes/opcion2.jpg);
+	background-size: 100% 100%;
 }
 #OPCION3{
 	width: 100%;
 	height: 100%;
 	display: none;
 	background-image: url(../imagenes/opcion3.jpg);
+	background-size: 100% 100%;
 }
 #OPCION4{
 	width: 100%;
 	height: 100%;
 	display: none;
 	background-image: url(../imagenes/opcion4.jpg);
+	background-size: 100% 100%;
 }
 #OPCION5{
 	width: 100%;
 	height: 100%;
 	display: none;
 	background-image: url(../imagenes/opcion5.jpg);
+	background-size: 100% 100%;
 }
 #OPCION6{
 	width: 100%;
 	height: 100%;
 	display: none;
 	background-image: url(../imagenes/opcion6.jpg);
+	background-size: 100% 100%;
 }
 #OPCION7{
 	width: 100%;
 	height: 100%;
 	display: none;
 	background-image: url(../imagenes/opcion7.jpg);
+	background-size: 100% 100%;
 }
 #OPCION8{
 	width: 100%;
 	height: 100%;
 	display: none;
 	background-image: url(../imagenes/cierre.jpg);
+	background-size: 100% 100%;
 }
 
 
