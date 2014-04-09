@@ -213,91 +213,105 @@ body{
 	height: 567px;
 }
 #sinA{	
-	width:100%; 
+	/*width:100%; */
+	background-size: 100% 100%;
 	height: 567px; 
 	background-image: url(../imagenes/_v1.png); 
 	background-position-y: 35px;
 }
 #conA{	
-	width:100%; 
+	/*width:100%; */
+	background-size: 100% 100%;
 	height: 567px;
 	background-image: url(../imagenes/_v2.png); 
 	background-position-y: 35px;
 }
 
 #sinB{	
-	width:100%; 
+	/*width:100%; */
+	background-size: 100% 100%;
 	height: 567px; 
 	background-image: url(../imagenes/_x1.png); 
 	background-position-y: 35px;
 }
 #conB{	
-	width:100%; 
+	/*width:100%; */
+	background-size: 100% 100%;
 	height: 567px;
 	background-image: url(../imagenes/_x2.png); 
 	background-position-y: 35px;
 }
 
 #sinC{	
-	width:100%; 
+	/*width:100%; */
+	background-size: 100% 100%;
 	height: 567px; 
 	background-image: url(../imagenes/_y1.png); 
 	background-position-y: 35px;
 }
 #conC{	
-	width:100%; 
+	/*width:100%; */
+	background-size: 100% 100%;
 	height: 567px;
 	background-image: url(../imagenes/_y2.png); 
 	background-position-y: 35px;
 }
 
 #sinD{	
-	width:100%; 
+	/*width:100%; */
+	background-size: 100% 100%;
 	height: 567px; 
 	background-image: url(../imagenes/_z1.png); 
 	background-position-y: 43px;
 }
 #conD{	
-	width:100%; 
+	/*width:100%; */
+	background-size: 100% 100%;
 	height: 567px;
 	background-image: url(../imagenes/_z2.png); 
 	background-position-y: 43px;
 }
 
 #sinE{	
-	width:100%; 
+	/*width:100%; */
+	background-size: 100% 100%;
 	height: 567px; 
 	background-image: url(../imagenes/_t1.png); 
 	background-position-y: 35px;
 }
 #conE{	
-	width:100%; 
+	/*width:100%; */
+	background-size: 100% 100%;
 	height: 567px;
 	background-image: url(../imagenes/_t2.png); 
 	background-position-y: 35px;
 }
 
 #sinF{	
-	width:100%; 
+	/*width:100%; */
+	background-size: 100% 100%;
 	height: 567px; 
 	background-image: url(../imagenes/_u1.png); 
 	background-position-y: 35px;
 }
 #conF{	
-	width:100%; 
+	/*width:100%; */
+	background-size: 100% 100%;
 	height: 567px;
 	background-image: url(../imagenes/_u2.png); 
 	background-position-y: 35px;
 }
 
 #sinG{	
-	width:100%; 
+	/*width:100%; */
+	background-size: 100% 100%;
 	height: 567px; 
 	background-image: url(../imagenes/_a1.png); 
 	background-position-y: 40px;
 }
 #conG{	
-	width:100%; 
+	/*width:100%; */
+	background-size: 100% 100%;
 	height: 567px;
 	background-image: url(../imagenes/_a2.png); 
 	background-position-y: 40px;
